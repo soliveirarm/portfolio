@@ -111,31 +111,25 @@ main {
 .basic-info {
   h1 {
     font-size: 3rem;
+    font-weight: 500;
   }
 
   h2 {
     font-size: 2rem;
+    font-weight: 400;
   }
 
   p {
+    color: #d4d7dc;
     font-size: 1rem;
+    font-weight: 300;
+    max-width: 400px;
   }
 
   h1,
   h2,
   p {
     padding: 3px;
-  }
-
-  h1,
-  h2 {
-    font-weight: 500;
-  }
-
-  p {
-    font-weight: 300;
-    color: #d4d7dc;
-    max-width: 400px;
   }
 }
 
