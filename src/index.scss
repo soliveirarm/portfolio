@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+// Variables
+$accent: #01bfa5;
+$font: "Inter", sans-serif;
+
+// Basic reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Reusable classes
+
+.accent {
+  color: $accent;
+}
+
+.active {
+  background-color: $accent;
+  padding: 5px 10px;
+  color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+// Elements by tag
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: $font;
+  background-image: linear-gradient(
+    to right top,
+    #2f4858,
+    #2e4d5f,
+    #2d5365,
+    #2b586c,
+    #285e72
+  );
+  color: #f7f7f7;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+// Elements by functionality/component
+
+.socials {
+  justify-content: center;
+
+  list-style-type: none;
+  font-size: 22px;
+
+  a {
+    color: $accent;
+  }
+}
+
+.navbar {
+  font-weight: 600;
+
+  ul {
+    list-style-type: none;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+}
+
+.home {
+  height: 100vh;
+  padding: 2rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  p {
+    padding: 3px;
+  }
+
+  h1,
+  h2 {
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 300;
+  }
+}
+
+.home__paragraph {
+  color: #d4d7dc;
+}
+
+.section-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: #f7f7f7;
+  margin: 2rem auto;
+  width: 80%;
+  background-color: $accent;
+  padding: 2rem;
+  border-radius: 30px 10px;
+
+  div {
+    max-width: 600px;
+  }
+
+  ul {
+    padding: 1rem;
+  }
+}
+
+.technologies-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about__content {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.btn {
+  font-size: 1rem;
+  font-family: $font;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.btn--outline {
+  border: 2px solid $accent;
+}
+
+.profile-pic {
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid #f7f7f7;
+}
