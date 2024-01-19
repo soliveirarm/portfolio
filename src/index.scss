@@ -189,6 +189,13 @@ main {
   }
 }
 
+#resume {
+  color: $accent;
+  border-radius: 10px;
+  border: 2px solid $accent;
+  padding: 5px;
+}
+
 .btn {
   font-size: 1rem;
   font-family: $font;
@@ -198,11 +205,6 @@ main {
   background-color: inherit;
   color: $light;
   cursor: pointer;
-}
-
-.btn--outline {
-  border: 2px solid $accent;
-  color: $accent;
 }
 
 .profile-pic {

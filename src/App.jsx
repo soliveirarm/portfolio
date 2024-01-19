@@ -1,6 +1,6 @@
 import NavLinks from "./components/NavLinks";
 import Socials from "./components/Socials";
-import ResumeBtn from "./components/ResumeBtn";
+import ResumeBtn from "./components/Resume";
 import BasicInfo from "./components/BasicInfo";
 import About from "./components/About";
 import Header from "./components/Header";

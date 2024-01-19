@@ -1,4 +1,4 @@
-import ResumeBtn from "./ResumeBtn";
+import ResumeBtn from "./Resume";
 import Link from "./Link";
 
 export default function NavLinks() {
