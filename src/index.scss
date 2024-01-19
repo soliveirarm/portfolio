@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 // Variables
+
 $accent: #01bfa5;
-$font: "Inter", sans-serif;
+$light: #f7f7f7;
+$font: "Lexend", sans-serif;
 
 // Basic reset
 
@@ -21,7 +23,7 @@ $font: "Inter", sans-serif;
 .active {
   background-color: $accent;
   padding: 5px 10px;
-  color: #f7f7f7;
+  color: $light;
   border-radius: 10px;
 }
 
@@ -30,8 +32,15 @@ $font: "Inter", sans-serif;
   gap: 20px;
 }
 
-.flex-align-center {
+.flex-column {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.center {
   align-items: center;
+  justify-content: center;
 }
 
 // Elements by tag
@@ -46,54 +55,60 @@ body {
   font-family: $font;
   background-image: linear-gradient(
     to right top,
-    #2f4858,
-    #2e4d5f,
-    #2d5365,
-    #2b586c,
-    #285e72
+    #000000,
+    #080808,
+    #101010,
+    #151515,
+    #1a1a1a
   );
-  color: #f7f7f7;
+  color: $light;
   background-attachment: fixed;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+#root {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header main";
+}
+
+main {
+  grid-area: main;
 }
 
 // Elements by functionality/component
 
 .socials {
-  justify-content: center;
-
   list-style-type: none;
   font-size: 22px;
 
   a {
+    color: darken($light, 20%);
+    transition: ease-in-out 0.3s;
+  }
+
+  a:hover {
     color: $accent;
   }
 }
 
-.navbar {
-  font-weight: 600;
-
+.nav-links {
   ul {
     list-style-type: none;
-    align-items: center;
   }
 
   a {
     text-decoration: none;
-    color: #f7f7f7;
+    color: $light;
   }
 }
 
-.home {
-  height: 100vh;
+.intro {
+  position: fixed;
+  grid-area: header;
   padding: 2rem;
+}
 
+.basic-info {
   h1 {
     font-size: 3rem;
   }
@@ -119,11 +134,15 @@ header {
 
   p {
     font-weight: 300;
+    color: #d4d7dc;
+    max-width: 400px;
   }
 }
 
-.home__paragraph {
-  color: #d4d7dc;
+.basic-info,
+.nav-links,
+.socials {
+  padding: 2rem;
 }
 
 .section-title {
@@ -132,14 +151,9 @@ header {
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  color: #f7f7f7;
+  color: $light;
   margin: 2rem auto;
   width: 80%;
-  background-color: $accent;
   padding: 2rem;
   border-radius: 30px 10px;
 
@@ -152,14 +166,33 @@ header {
   }
 }
 
-.technologies-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
 .about__content {
   text-align: justify;
   margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.technologies-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.tech-icon {
+  color: $accent;
+  width: 30px;
+}
+
+.contact {
+  padding: 2rem;
+  a {
+    color: $light;
+    transition: ease-in-out 0.3s;
+  }
+
+  a:hover {
+    color: $accent;
+  }
 }
 
 .btn {
@@ -168,14 +201,42 @@ header {
   font-weight: 600;
   padding: 5px;
   border-radius: 10px;
+  background-color: inherit;
+  color: $light;
+  cursor: pointer;
 }
 
 .btn--outline {
   border: 2px solid $accent;
+  color: $accent;
 }
 
 .profile-pic {
-  width: 250px;
-  border-radius: 50%;
-  border: 2px solid #f7f7f7;
+  align-self: center;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d4d7dc;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 920px) {
+  #root {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main";
+  }
+  .intro {
+    position: static;
+  }
 }
