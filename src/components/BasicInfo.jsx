@@ -3,7 +3,10 @@ export default function BasicInfo() {
     <div className="basic-info">
       <h1 className="accent">Sarah Oliveira</h1>
       <h2>Desenvolvedora front-end</h2>
-      <p>Gosto da parte mais visual, por isso me identifico mais com design.</p>
+      <p>
+        Design, UI e UX são as coisas que mais me atraem, por isso me identifico
+        com front-end
+      </p>
     </div>
   );
 }

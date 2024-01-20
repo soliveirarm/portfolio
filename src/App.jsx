@@ -1,6 +1,5 @@
 import NavLinks from "./components/NavLinks";
 import Socials from "./components/Socials";
-import ResumeBtn from "./components/Resume";
 import BasicInfo from "./components/BasicInfo";
 import About from "./components/About";
 import Header from "./components/Header";
@@ -17,7 +16,7 @@ export default function App() {
         <About />
 
         <div id="contato" className="contact flex-column center">
-          <h1>Contato</h1>
+          <h1 className="section-title">Contato</h1>
           <p>Gostaria de entrar em contato comigo?</p>
           <p>
             Meu email:{" "}

@@ -6,6 +6,10 @@ $accent: #01bfa5;
 $light: #f7f7f7;
 $font: "Lexend", sans-serif;
 
+@mixin transition() {
+  transition: ease-in-out 0.3s;
+}
+
 // Basic reset
 
 * {
@@ -67,7 +71,7 @@ body {
 
 #root {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: "header main";
 }
 
@@ -82,8 +86,8 @@ main {
   font-size: 22px;
 
   a {
-    color: darken($light, 20%);
-    transition: ease-in-out 0.3s;
+    @include transition();
+    color: #e0e0e0;
   }
 
   a:hover {
@@ -120,7 +124,7 @@ main {
   }
 
   p {
-    color: #d4d7dc;
+    color: #c7c7c7;
     font-size: 1rem;
     font-weight: 300;
     max-width: 400px;
@@ -140,6 +144,7 @@ main {
 }
 
 .section-title {
+  font-weight: 500;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -161,27 +166,48 @@ main {
 }
 
 .about__content {
+  color: #c6c6c6;
   text-align: justify;
   margin-bottom: 10px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 }
 
-.technologies-title {
+.tech__title {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.tech-icon {
-  color: $accent;
-  width: 30px;
+.tech {
+  .tech__title,
+  div {
+    padding: 10px;
+  }
+  .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.tech__text {
+  text-align: center;
+  border-radius: 10px;
+  background-color: hsla(172, 99%, 38%, 0.419);
+  padding: 5px 10px;
+  user-select: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.tech__icon svg {
+  width: 15px;
 }
 
 .contact {
   padding: 2rem;
   a {
+    @include transition();
     color: $light;
-    transition: ease-in-out 0.3s;
   }
 
   a:hover {
@@ -189,22 +215,29 @@ main {
   }
 }
 
-#resume {
-  color: $accent;
-  border-radius: 10px;
-  border: 2px solid $accent;
-  padding: 5px;
-}
-
 .btn {
   font-size: 1rem;
   font-family: $font;
-  font-weight: 600;
-  padding: 5px;
-  border-radius: 10px;
   background-color: inherit;
-  color: $light;
-  cursor: pointer;
+  @include transition();
+  border-radius: 10px;
+  border: 2px solid $accent;
+  padding: 5px;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: $accent;
+    color: $light;
+
+    a {
+      color: $light;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  a {
+    color: $accent;
+  }
 }
 
 .profile-pic {

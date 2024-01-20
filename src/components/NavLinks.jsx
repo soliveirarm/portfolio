@@ -1,4 +1,4 @@
-import ResumeBtn from "./Resume";
+import ResumeLink from "./ResumeLink";
 import Link from "./Link";
 
 export default function NavLinks() {
@@ -9,7 +9,7 @@ export default function NavLinks() {
         <Link href="#projetos">Projetos</Link>
         <Link href="#contato">Contato</Link>
         <Link href="#">
-          <ResumeBtn />
+          <ResumeLink />
         </Link>
       </ul>
     </nav>
