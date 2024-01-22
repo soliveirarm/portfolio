@@ -12,7 +12,7 @@ export default function App() {
         <NavLinks />
         <Socials />
       </Header>
-      <main>
+      <main className="flex-column center">
         <About />
 
         <div id="contato" className="contact flex-column center">
