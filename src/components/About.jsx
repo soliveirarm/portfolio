@@ -1,5 +1,3 @@
-import profilePic from "../assets/profile-pic.png";
-
 import Tech from "./Tech";
 import myAge from "../js/age";
 
@@ -7,7 +5,10 @@ export default function About() {
   return (
     <div className="about flex-column center" id="sobre">
       <h1 className="section-title">Sobre Mim</h1>
-      <img src={profilePic} className="profile-pic" />
+      <img
+        src="https://avatars.githubusercontent.com/u/76123583?v=4"
+        className="profile-pic"
+      />
       <p className="about__content">
         Olá, meu nome é Sarah Oliveira, tenho {myAge} anos e estou estudando
         para ser desenvolvedora front-end. Me formei na Fatec Lins em Sistemas
