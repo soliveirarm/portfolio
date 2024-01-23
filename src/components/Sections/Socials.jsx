@@ -4,11 +4,11 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "./Link";
+import Link from "../Link";
 
 export default function Socials() {
   return (
-    <ul className="socials flex">
+    <ul className="section socials flex">
       <Link href="https://codepen.io/oliveirasarah" target="_blank">
         <FontAwesomeIcon icon={faCodepen} />
       </Link>

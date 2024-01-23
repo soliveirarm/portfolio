@@ -1,7 +1,7 @@
-import NavLinks from "./components/NavLinks";
-import Socials from "./components/Socials";
-import BasicInfo from "./components/BasicInfo";
-import About from "./components/About";
+import NavLinks from "./components/Sections/NavLinks";
+import Socials from "./components/Sections/Socials";
+import BasicInfo from "./components/Sections/BasicInfo";
+import About from "./components/Sections/About";
 import Header from "./components/Header";
 
 export default function App() {
@@ -12,11 +12,11 @@ export default function App() {
         <NavLinks />
         <Socials />
       </Header>
-      <main className="flex-column center">
+      <main className="flex f-column f-center">
         <About />
 
-        <div id="contato" className="contact flex-column center">
-          <h1 className="section-title">Contato</h1>
+        <div id="contato" className="section contact flex f-column f-center">
+          <h1 className="section__title">Contato</h1>
           <p>Gostaria de entrar em contato comigo?</p>
           <p>
             Meu email:{" "}

@@ -1,8 +1,8 @@
 // Variables
 
-$accent: #01bfa5;
+$accent: #9378ff;
 $light: #f7f7f7;
-$font: "Lexend", sans-serif;
+$font: "Onest", sans-serif;
 
 @mixin transition() {
   transition: ease-in-out 0.3s;
@@ -34,15 +34,17 @@ $font: "Lexend", sans-serif;
   gap: 20px;
 }
 
-.flex-column {
-  display: flex;
-  gap: 20px;
+.f-column {
   flex-direction: column;
 }
 
-.center {
+.f-center {
   align-items: center;
   justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 // Elements by tag
@@ -53,29 +55,30 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: $font;
   background-image: linear-gradient(
-    to right bottom,
-    #18242c,
-    #1a2730,
-    #1c2b35,
-    #1f2e39,
-    #21323e
+    to right top,
+    #25222a,
+    #232028,
+    #211e26,
+    #1f1d24,
+    #1d1b22
   );
   color: $light;
   background-attachment: fixed;
 }
 
 #root {
+  padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "header main";
 }
 
 main {
-  grid-area: main;
   max-width: 750px;
+  grid-area: main;
   justify-self: center;
 }
 
@@ -100,16 +103,36 @@ a {
     list-style-type: none;
   }
 
-  a {
+  .nav-link {
+    @include transition();
+    position: relative;
     text-decoration: none;
     color: $light;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .nav-link::after {
+    @include transition();
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: $accent;
+  }
+  .nav-link:hover::after {
+    width: 100%;
   }
 }
 
-.intro {
-  position: fixed;
+.header {
   grid-area: header;
-  padding: 2rem;
+  position: fixed;
 }
 
 .basic-info {
@@ -137,13 +160,13 @@ a {
   }
 }
 
-.basic-info,
-.nav-links,
-.socials {
+.section {
   padding: 2rem;
 }
 
-.section-title {
+.section__title {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
   font-weight: 500;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -152,8 +175,6 @@ a {
 .about {
   color: $light;
   margin: 2rem auto;
-  width: 80%;
-  padding: 2rem;
   border-radius: 30px 10px;
 
   ul {
@@ -163,45 +184,43 @@ a {
 
 .about__content {
   color: #c6c6c6;
-  text-align: justify;
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.tech__title {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
 .tech {
-  .tech__title,
-  div {
-    padding: 10px;
-  }
-  .flex {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+  gap: 5px;
 }
 
-.tech__text {
+.tech__title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tech__icons {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech__icon {
+  display: flex;
+  gap: 5px;
   text-align: center;
   border-radius: 10px;
-  background-color: hsla(172, 99%, 38%, 0.172);
+  background-color: hsla(252, 100%, 74%, 0.084);
   padding: 5px 10px;
   user-select: none;
   font-size: 0.9rem;
   font-weight: 300;
-  color: lighten($accent, 50%);
+  color: lighten($accent, 10%);
 }
 
-.tech__icon svg {
-  width: 15px;
-}
+// .tech__name {
+// }
 
 .contact {
-  padding: 2rem;
   a {
     @include transition();
     color: $light;
@@ -213,27 +232,18 @@ a {
 }
 
 .btn {
+  @include transition();
+
   font-size: 1rem;
   font-family: $font;
   background-color: inherit;
-  @include transition();
   border-radius: 10px;
   border: 2px solid $accent;
   padding: 5px;
 
-  &:hover {
-    transform: scale(1.1);
-    background-color: $accent;
-    color: $light;
-
-    a {
-      color: $light;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    }
-  }
-
   a {
     color: $accent;
+    text-decoration: none;
   }
 }
 
@@ -249,12 +259,16 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #1a1a1a;
+  background-color: #1d1b22;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #d4d7dc;
+  background-color: lighten($accent, 10%);
   border-radius: 5px;
+
+  &:hover {
+    background-color: lighten($accent, 20%);
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -262,7 +276,31 @@ a {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main";
   }
-  .intro {
+
+  .header {
     position: static;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .about {
+    margin: auto;
+  }
+}
+
+@media (hover: hover) {
+  .btn {
+    &:hover {
+      transform: scale(1.1);
+      background-color: $accent;
+      color: $light;
+
+      a {
+        color: $light;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+      }
+    }
   }
 }
