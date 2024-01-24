@@ -34,13 +34,17 @@ $font: "Onest", sans-serif;
   gap: 20px;
 }
 
-.f-column {
+.flex-column {
   flex-direction: column;
 }
 
-.f-center {
+.flex-center {
   align-items: center;
   justify-content: center;
+}
+
+.gap-10 {
+  gap: 10px;
 }
 
 .bold {
@@ -137,12 +141,12 @@ a {
 
 .basic-info {
   h1 {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 
@@ -150,7 +154,7 @@ a {
     color: #c7c7c7;
     font-size: 1rem;
     font-weight: 300;
-    max-width: 400px;
+    max-width: 300px;
   }
 
   h1,
@@ -174,7 +178,7 @@ a {
 
 .about {
   color: $light;
-  margin: 2rem auto;
+  // margin: 2rem auto;
   border-radius: 30px 10px;
 
   ul {
@@ -217,9 +221,6 @@ a {
   color: lighten($accent, 10%);
 }
 
-// .tech__name {
-// }
-
 .contact {
   a {
     @include transition();
@@ -229,6 +230,32 @@ a {
   a:hover {
     color: $accent;
   }
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "img title" "img content";
+  gap: 10px;
+}
+
+.project__title {
+  font-weight: 500;
+  grid-area: title;
+}
+
+.project__content {
+  @extend .flex, .flex-column;
+  grid-area: content;
+  gap: 10px;
+}
+
+.project__img {
+  grid-area: img;
+  background-size: contain;
+  border-radius: 10px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .btn {
@@ -271,13 +298,31 @@ a {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 740px) {
+  .projects {
+    gap: 2rem;
+  }
+
+  .project {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "img" "content";
+  }
+
+  .project__img,
+  .project__content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
   #root {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main";
   }
 
   .header {
+    padding: 2rem;
     position: static;
   }
 

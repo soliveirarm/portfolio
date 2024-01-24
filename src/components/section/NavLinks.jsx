@@ -4,7 +4,7 @@ import Link from "../Link";
 export default function NavLinks() {
   return (
     <nav className="section nav-links">
-      <ul className="flex f-column">
+      <ul className="flex flex-column">
         <Link href="#sobre" className="nav-link">
           Sobre Mim
         </Link>

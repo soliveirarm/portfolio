@@ -1,0 +1,16 @@
+[
+  {
+    "cover": "dc-movies.png",
+    "title": "DC Movies",
+    "desc": "Projeto que lista todas as animações da DC em ordem de lançamento e com filtros que separam quais filmes tem continuação, quais são indepedentes, etc.",
+    "pageLink": "https://dcmovies.netlify.app/",
+    "techs": "React, Sass"
+  },
+  {
+    "cover": "focus.png",
+    "title": "Focus",
+    "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente, então ao atualizar a página ou fechar o navegador ela não é perdida.",
+    "pageLink": "https://focus-minimal.netlify.app/",
+    "techs": "HTML, CSS, JavaScript, Sass"
+  }
+]

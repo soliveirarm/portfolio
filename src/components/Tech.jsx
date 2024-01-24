@@ -10,12 +10,12 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 export default function Tech() {
   return (
-    <div className="tech flex f-column f-center">
+    <div className="tech flex flex-column flex-center">
       <h2 className="tech__title">
         Algumas <span className="accent">tecnologias</span> com as quais eu tive
         contato:
       </h2>
-      <div className="tech__icons flex f-center">
+      <div className="tech__icons flex flex-center">
         <TechIcon name="HTML" icon={faHtml5} />
         <TechIcon name="CSS" icon={faCss3} />
         <TechIcon name="JavaScript" icon={faJs} />
