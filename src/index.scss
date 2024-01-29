@@ -1,6 +1,6 @@
 // Variables
 
-$accent: #9378ff;
+$accent: #cda7ff;
 $light: #f7f7f7;
 $font: "Onest", sans-serif;
 
@@ -213,7 +213,7 @@ a {
   gap: 5px;
   text-align: center;
   border-radius: 10px;
-  background-color: hsla(252, 100%, 74%, 0.084);
+  background-color: rgba(205, 167, 255, 0.2);
   padding: 5px 10px;
   user-select: none;
   font-size: 0.9rem;
@@ -290,11 +290,11 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: lighten($accent, 10%);
+  background-color: lighten($accent, 5%);
   border-radius: 5px;
 
   &:hover {
-    background-color: lighten($accent, 20%);
+    background-color: lighten($accent, 8%);
   }
 }
 
