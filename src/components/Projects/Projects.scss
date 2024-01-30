@@ -1,0 +1,30 @@
+@import "../../styles/utils";
+
+.projects {
+  @include flex();
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "img title" "img content";
+  gap: 10px;
+
+  &__title {
+    font-weight: 500;
+    grid-area: title;
+  }
+
+  &__content {
+    @include flex($center: false, $gap: 10px);
+    grid-area: content;
+  }
+
+  &__img {
+    grid-area: img;
+    background-size: contain;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+  }
+}

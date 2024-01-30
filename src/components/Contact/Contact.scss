@@ -1,0 +1,13 @@
+@import "../../styles/utils";
+
+.contact {
+  @include flex();
+  a {
+    @include transition();
+    color: $light;
+  }
+
+  a:hover {
+    color: $accent;
+  }
+}

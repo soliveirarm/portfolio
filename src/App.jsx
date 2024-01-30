@@ -1,34 +1,22 @@
-import NavLinks from "./components/section/NavLinks";
-import Socials from "./components/section/Socials";
-import BasicInfo from "./components/section/BasicInfo";
-import About from "./components/section/About";
-import Header from "./components/Header";
-import Projects from "./components/section/Projects/Projects";
+import NavLinks from "./components/NavLinks/NavLinks";
+import Socials from "./components/Socials/Socials";
+import BasicInfo from "./components/BasicInfo/BasicInfo";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
   return (
     <>
-      <Header>
+      <header>
         <BasicInfo />
         <NavLinks />
         <Socials />
-      </Header>
-      <main className="flex flex-column flex-center">
+      </header>
+      <main>
         <About />
-
         <Projects />
-
-        <div
-          id="contato"
-          className="section contact flex flex-column flex-center"
-        >
-          <h1 className="section__title">Contato</h1>
-          <p>Gostaria de entrar em contato comigo?</p>
-          <p>
-            Meu email:{" "}
-            <a href="mailto:sarah.mdeo@outlook.com">sarah.mdeo@outlook.com</a>
-          </p>
-        </div>
+        <Contact />
       </main>
     </>
   );

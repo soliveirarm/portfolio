@@ -1,3 +1,5 @@
+import "./ResumeLink.scss";
+
 export default function ResumeLink() {
   return (
     <button className="btn">

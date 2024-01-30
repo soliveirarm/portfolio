@@ -3,7 +3,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function Project({ cover, title, desc, pageLink, techs }) {
   return (
-    <div className="project">
+    <section className="project">
       <img className="project__img" src={cover} />
 
       <h1 className="project__title accent">{title}</h1>
@@ -18,6 +18,6 @@ export default function Project({ cover, title, desc, pageLink, techs }) {
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
         </a>
       </div>
-    </div>
+    </section>
   );
 }

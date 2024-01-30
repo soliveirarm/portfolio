@@ -1,13 +1,14 @@
 import myAge from "../../js/age";
-import Tech from "../Tech";
+import Tech from "../Technologies/Technologies";
+import "./About.scss";
 
 export default function About() {
   return (
-    <section className="section about flex flex-column flex-center" id="sobre">
+    <section className="section about" id="sobre">
       <h1 className="section__title">Sobre Mim</h1>
       <img
         src="https://avatars.githubusercontent.com/u/76123583?v=4"
-        className="profile-pic"
+        className="about__pic"
       />
       <p className="about__content">
         Olá, meu nome é Sarah Oliveira, tenho {myAge} anos, sou de{" "}
