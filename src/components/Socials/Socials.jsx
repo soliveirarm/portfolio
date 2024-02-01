@@ -10,13 +10,13 @@ import "./Socials.scss";
 export default function Socials() {
   return (
     <ul className="section socials">
-      <Link href="https://github.com/oliveirasarah" target="_blank">
+      <Link href="https://github.com/saraholiveirarm" target="_blank">
         <FontAwesomeIcon icon={faGithub} />
       </Link>
       <Link href="https://www.linkedin.com/in/oliveira-sarah/" target="_blank">
         <FontAwesomeIcon icon={faLinkedin} />
       </Link>
-      <Link href="https://codepen.io/oliveirasarah" target="_blank">
+      <Link href="https://codepen.io/saraholiveirarm" target="_blank">
         <FontAwesomeIcon icon={faCodepen} />
       </Link>
     </ul>

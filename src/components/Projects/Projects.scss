@@ -7,12 +7,25 @@
 .project {
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-template-areas: "img title" "img content";
+  grid-template-areas:
+    "img title"
+    "img content";
   gap: 10px;
 
   &__title {
     font-weight: 500;
     grid-area: title;
+
+    a {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__content {
@@ -26,5 +39,21 @@
     border-radius: 10px;
     max-width: 200px;
     width: 100%;
+  }
+}
+
+.projects-academic {
+  @include flex($column: false);
+  width: 100%;
+  background-color: $accent;
+  border-radius: 10px;
+  border: none;
+  padding: 2rem 1rem;
+  color: #1d1b22;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($accent, 5%);
+    color: #1d1b22;
   }
 }
