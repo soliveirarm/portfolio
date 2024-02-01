@@ -2,12 +2,34 @@
 
 .contact {
   @include flex();
-  a {
-    @include transition();
-    color: $light;
+
+  p {
+    text-align: center;
   }
 
-  a:hover {
+  &__links {
+    @include flex($column: false);
+  }
+
+  &__icon {
     color: $accent;
+  }
+
+  a {
+    text-decoration: none;
+    @include flex($column: false, $gap: 0.5rem);
+    @include transition();
+    color: $light;
+
+    &:hover {
+      text-decoration: underline;
+      color: $accent;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact__links {
+    @include flex($column: true);
   }
 }
