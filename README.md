@@ -4,4 +4,4 @@
 
 - Protótipo feito com Figma (que foi completamente mudado rs)
 - Desenvolvido com React e Sass
-- Deployment feito com Netlify.
+- Deployment feito com Vercel.
