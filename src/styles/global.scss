@@ -47,11 +47,16 @@ body {
   background-attachment: fixed;
 }
 
+::selection {
+  background: $accent;
+  color: $dark;
+}
+
 #root {
-  padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "header main";
+  padding: 0.5rem;
 }
 
 header {
@@ -68,6 +73,7 @@ main {
 
 a {
   @include transition();
+  text-decoration: none;
   color: #e0e0e0;
 
   &:hover {
@@ -93,7 +99,7 @@ ul {
 
 // Scrollbar
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -126,15 +132,18 @@ ul {
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   #root {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main";
   }
 
   header {
-    padding: 2rem;
     position: static;
+
+    .section {
+      padding: 2rem;
+    }
   }
 
   .section {

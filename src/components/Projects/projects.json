@@ -1,16 +1,51 @@
-[
-  {
-    "cover": "dc-movies.png",
-    "title": "DC Movies",
-    "desc": "Projeto que lista todas as animações da DC em ordem de lançamento e com filtros que separam quais filmes tem continuação, quais são indepedentes, etc.",
-    "pageLink": "https://dcmovies.netlify.app/",
-    "techs": "React, Sass"
-  },
-  {
-    "cover": "focus.png",
-    "title": "Focus",
-    "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente, então ao atualizar a página ou fechar o navegador ela não é perdida.",
-    "pageLink": "https://focus-minimal.netlify.app/",
-    "techs": "HTML, CSS, JavaScript, Sass"
-  }
-]
+{
+  "personal": [
+    {
+      "cover": "dc-movies.png",
+      "title": "DC Movies",
+      "desc": "Projeto que lista todas as animações da DC em ordem de lançamento e com filtros que separam quais filmes tem continuação, quais são indepedentes, etc.",
+      "pageLink": "https://dc-movies.vercel.app/",
+      "techs": "React, Sass"
+    },
+    {
+      "cover": "focus.png",
+      "title": "Focus",
+      "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente, então ao atualizar a página ou fechar o navegador ela não é perdida.",
+      "pageLink": "https://focus-minimal.vercel.app/",
+      "techs": "HTML, CSS, JavaScript, Sass"
+    }
+  ],
+
+  "academic": [
+    {
+      "id": "1",
+      "cover": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "MirrorFashion"
+    },
+    {
+      "id": "2",
+      "cover": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Michelangelo Pizzaria"
+    },
+    {
+      "id": "3",
+      "cover": "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "SciCalc"
+    },
+    {
+      "id": "4",
+      "cover": "https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Protótipo - Portfólio (Figma)"
+    },
+    {
+      "id": "5",
+      "cover": "https://images.pexels.com/photos/1275929/pexels-photo-1275929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Sarah Burguer"
+    },
+    {
+      "id": "6",
+      "cover": "https://images.pexels.com/photos/23475/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Sarah Burguer"
+    }
+  ]
+}

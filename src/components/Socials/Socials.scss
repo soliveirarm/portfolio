@@ -1,6 +1,0 @@
-@import "../../styles/utils";
-
-.socials {
-  @include flex($column: false, $center: false);
-  font-size: 22px;
-}

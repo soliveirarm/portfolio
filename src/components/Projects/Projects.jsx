@@ -1,15 +1,22 @@
 import Project from "./Project";
+import Flex from "../Flex";
 import PROJECTS from "./projects.json";
-import "./Projects.scss";
-
+import styled from "styled-components";
 
 export default function Projects() {
   return (
-    <section id="projetos" className="section projects">
-      <h1 className="section__title">Projetos</h1>
-      {PROJECTS.map((el) => (
+    <Flex
+      as="section"
+      $centerY={true}
+      $column={true}
+      id="projetos"
+      className="section"
+    >
+      <h2 className="section__title projects">Projetos</h2>
+
+      {PROJECTS.personal.map((el) => (
         <Project key={el.title} {...el} />
       ))}
-    </section>
+    </Flex>
   );
 }
