@@ -1,5 +1,8 @@
 :root {
   --accent: #cda7ff;
+  --accent-translucid: rgba(205, 167, 255, 0.2);
+  --accent-light: #eadaff;
   --light: #f7f7f7;
+  --mute: #c6c6c6;
   --dark: #1d1b22;
 }

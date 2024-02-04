@@ -2,59 +2,75 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import Flex from "../Flex";
+import Highlight from "../Highlight";
 
-const Section = styled.section`
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-areas:
-    "img title"
-    "img content";
-  gap: 10px;
+const StyledFlex = styled(Flex)`
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: 0.3s;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: var(--accent-translucid);
+  }
 
   img {
-    grid-area: img;
-    background-size: contain;
-    border-radius: 10px;
-    max-width: 200px;
     width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
   }
 
   h2 {
     font-size: 1.3rem;
-    font-weight: 500;
-    grid-area: title;
+  }
 
-    a {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      text-decoration: none;
+  .desc {
+    color: var(--mute);
+  }
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+  .link-icon {
+    align-self: end;
+  }
+`;
+
+const Techs = styled(Flex)`
+  color: var(--accent-light);
+  font-weight: 500;
+
+  span {
+    background-color: rgba(205, 167, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
   }
 `;
 
 export default function Project({ cover, title, desc, pageLink, techs }) {
   return (
-    <Section className="project">
+    <StyledFlex
+      as="section"
+      $column={true}
+      $gap="10px"
+      $centerY={true}
+      className="project"
+      onClick={() => window.location.assign(pageLink)}
+    >
       <img src={cover} />
 
-      <h2 className="accent">
-        <a href={pageLink} target="_blank">
-          <span>{title}</span>
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" />
-        </a>
-      </h2>
+      <h2>{title}</h2>
 
       <Flex $column={true} $gap="10px" className="content">
-        <p>{desc}</p>
-        <p>
-          Desenvolvido com: <span className="accent">{techs}</span>
-        </p>
+        <p className="desc">{desc}</p>
+        <Techs $gap="0.5rem">
+          {techs.map((tech) => (
+            <span>{tech}</span>
+          ))}
+        </Techs>
       </Flex>
-    </Section>
+
+      <span className="link-icon">
+        <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="sm" />
+      </span>
+    </StyledFlex>
   );
 }

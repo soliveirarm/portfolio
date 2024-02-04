@@ -36,7 +36,7 @@ const Nav = styled.nav`
 export default function NavLinks() {
   return (
     <Nav>
-      <Flex as="ul" $column={true}>
+      <Flex as="ul">
         <Link href="#sobre" className="link">
           Sobre Mim
         </Link>
@@ -45,9 +45,6 @@ export default function NavLinks() {
         </Link>
         <Link href="#projetos" className="link">
           Projetos
-        </Link>
-        <Link href="#contato" className="link">
-          Contato
         </Link>
       </Flex>
     </Nav>

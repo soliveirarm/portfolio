@@ -29,7 +29,7 @@ export default function Technologies() {
       className="section"
       id="tecnologias"
     >
-      <h2 className="section__title">Principais Tecnologias</h2>
+      <h2 className="section__title title">Principais Tecnologias</h2>
 
       <ul className="icons">
         <TechLabel name="HTML" />

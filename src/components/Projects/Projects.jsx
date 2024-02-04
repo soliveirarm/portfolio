@@ -3,6 +3,12 @@ import Flex from "../Flex";
 import PROJECTS from "./projects.json";
 import styled from "styled-components";
 
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+`;
+
 export default function Projects() {
   return (
     <Flex
@@ -14,9 +20,11 @@ export default function Projects() {
     >
       <h2 className="section__title projects">Projetos</h2>
 
-      {PROJECTS.personal.map((el) => (
-        <Project key={el.title} {...el} />
-      ))}
+      <Grid>
+        {PROJECTS.personal.map((el) => (
+          <Project key={el.title} {...el} />
+        ))}
+      </Grid>
     </Flex>
   );
 }

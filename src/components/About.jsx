@@ -7,6 +7,7 @@ import styled from "styled-components";
 const profilePicUrl = "https://avatars.githubusercontent.com/u/76123583?v=4";
 
 const StyledFlex = styled(Flex)`
+  margin-top: 2rem;
   color: var(--light);
   border-radius: 30px 10px;
 
@@ -19,10 +20,11 @@ const StyledFlex = styled(Flex)`
 
   .about__content {
     text-align: center;
-    color: #c6c6c6;
+    color: var(--mute);
     margin-bottom: 10px;
     font-weight: 400;
     line-height: 1.5;
+    max-width: 768px;
   }
 
   p > span {
@@ -40,7 +42,7 @@ export default function About() {
       className="section"
       id="sobre"
     >
-      <h2 className="section__title about">Sobre Mim</h2>
+      <h2 className="section__title title">Sobre Mim</h2>
       <img src={profilePicUrl} className="about__pic" />
 
       <p className="about__content">

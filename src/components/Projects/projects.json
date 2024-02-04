@@ -3,16 +3,16 @@
     {
       "cover": "dc-movies.png",
       "title": "DC Movies",
-      "desc": "Projeto que lista todas as animações da DC em ordem de lançamento e com filtros que separam quais filmes tem continuação, quais são indepedentes, etc.",
+      "desc": "Projeto que lista todas as animações da DC em ordem de lançamento com filtros.",
       "pageLink": "https://dc-movies.vercel.app/",
-      "techs": "React, Sass"
+      "techs": ["React", "Sass"]
     },
     {
       "cover": "focus.png",
       "title": "Focus",
-      "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente, então ao atualizar a página ou fechar o navegador ela não é perdida.",
+      "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente.",
       "pageLink": "https://focus-minimal.vercel.app/",
-      "techs": "HTML, CSS, JavaScript, Sass"
+      "techs": ["HTML", "CSS", "JavaScript", "Sass"]
     }
   ],
 
