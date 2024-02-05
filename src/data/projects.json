@@ -34,6 +34,13 @@
       "desc": "Página com todas as músicas de quase todos os álbums de Taylor Swift. Dados vindo de uma API",
       "pageLink": "https://taylorswitnesses.vercel.app/",
       "techs": ["HTML", "Sass", "React"]
+    },
+    {
+      "cover": "https://github.com/saraholiveirarm/CurrencyConverter/blob/main/img/final-product.png?raw=true",
+      "title": "Conversor de Moedas",
+      "desc": "Converte de Real para Dólar Americano, Euro e Libras Esterlinas. A cotação vem da Exchange Rates API",
+      "pageLink": "https://currency-converter-so.vercel.app/",
+      "techs": ["HTML", "Sass", "JavaScript"]
     }
   ],
 

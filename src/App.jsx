@@ -3,6 +3,7 @@ import NavLinks from "./components/NavLinks";
 import About from "./components/MainSections/About";
 import Projects from "./components/MainSections/Projects";
 import Flex from "./components/Style/Flex";
+import Socials from "./components/Socials";
 import logo from "/logo.svg";
 import styled from "styled-components";
 import Technologies from "./components/MainSections/Technologies";
@@ -39,6 +40,19 @@ const Main = styled.main`
   max-width: 1024px;
 `;
 
+const Footer = styled(Flex)`
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-top: 2px solid var(--accent);
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+
+  p {
+    color: var(--accent-light);
+    font-weight: bold;
+  }
+`;
+
 export default function App() {
   return (
     <>
@@ -54,6 +68,11 @@ export default function App() {
         <Technologies />
         <Projects />
       </Main>
+
+      <Footer as="footer" $column={true} $centerY={true} $gap="0.1rem">
+        <p>Feito com React, Sass e styled-components</p>
+        <Socials />
+      </Footer>
     </>
   );
 }

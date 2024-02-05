@@ -5,10 +5,10 @@ import {
   faGithub,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import Flex from "./Style/Flex";
 import Link from "./Link";
 import styled from "styled-components";
-import Flex from "./Style/Flex";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Ul = styled(Flex)`
   font-size: 22px;

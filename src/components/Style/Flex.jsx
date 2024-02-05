@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Flex = styled.div`
-  @include flex();
   display: flex;
   gap: ${({ $gap }) => $gap || "20px"};
   ${({ $column }) => $column && "flex-direction: column;"}
