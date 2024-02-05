@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "./Link";
 import styled from "styled-components";
-import Flex from "./Flex";
+import Flex from "./Style/Flex";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Ul = styled(Flex)`

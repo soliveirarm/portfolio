@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Link from "./Link";
-import Flex from "./Flex";
+import Flex from "./Style/Flex";
 
 const Nav = styled.nav`
   padding: 2rem;

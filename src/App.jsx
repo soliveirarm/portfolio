@@ -1,10 +1,11 @@
-import BasicInfo from "./components/BasicInfo";
+import HomeScreen from "./components/HomeScreen";
 import NavLinks from "./components/NavLinks";
-import About from "./components/About";
-import Projects from "./components/Projects/Projects";
-import styled from "styled-components";
+import About from "./components/MainSections/About";
+import Projects from "./components/MainSections/Projects";
+import Flex from "./components/Style/Flex";
 import logo from "/logo.svg";
-import Flex from "./components/Flex";
+import styled from "styled-components";
+import Technologies from "./components/MainSections/Technologies";
 
 const Header = styled(Flex)`
   justify-content: space-between;
@@ -45,10 +46,12 @@ export default function App() {
         <Logo src={logo} alt="Logo do site escrito 'SO' na cor roxa" />
         <NavLinks />
       </Header>
-      <BasicInfo />
+
+      <HomeScreen />
 
       <Main>
         <About />
+        <Technologies />
         <Projects />
       </Main>
     </>

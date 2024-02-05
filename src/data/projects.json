@@ -3,7 +3,7 @@
     {
       "cover": "dc-movies.png",
       "title": "DC Movies",
-      "desc": "Projeto que lista todas as animações da DC em ordem de lançamento com filtros.",
+      "desc": "Projeto que lista todas as animações da DC em ordem de lançamento com filtros. Os dados estão vindo de um arquivo json",
       "pageLink": "https://dc-movies.vercel.app/",
       "techs": ["React", "Sass"]
     },
@@ -13,6 +13,27 @@
       "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente.",
       "pageLink": "https://focus-minimal.vercel.app/",
       "techs": ["HTML", "CSS", "JavaScript", "Sass"]
+    },
+    {
+      "cover": "https://github.com/saraholiveirarm/TemperatureConverter/blob/main/img/app-pic.png?raw=true",
+      "title": "Conversor de Temperatura",
+      "desc": "Conversor de temperatura simples feito com JavaScript (Celsius, Fahrenheit e Kelvin)",
+      "pageLink": "https://temperature-converter-so.vercel.app/",
+      "techs": ["HTML", "Sass", "JavaScript"]
+    },
+    {
+      "cover": "https://github.com/saraholiveirarm/SpotifyCloneReact/blob/main/img/final-product.png?raw=true",
+      "title": "Clone Spotify",
+      "desc": "Clone da página inicial do Spotify. Projeto desenvolvido durante a Imersão Dev da Alura",
+      "pageLink": "https://spotify-clone-so.vercel.app/",
+      "techs": ["HTML", "Sass", "React"]
+    },
+    {
+      "cover": "https://github.com/saraholiveirarm/TS-Albums/blob/main/public/final-product.png?raw=true",
+      "title": "Taylor's Witnesses",
+      "desc": "Página com todas as músicas de quase todos os álbums de Taylor Swift. Dados vindo de uma API",
+      "pageLink": "https://taylorswitnesses.vercel.app/",
+      "techs": ["HTML", "Sass", "React"]
     }
   ],
 

@@ -1,7 +1,6 @@
-import myAge from "../js/age";
-import ResumeLink from "./ResumeLink";
-import Tech from "./Technologies";
-import Flex from "./Flex";
+import myAge from "../../js/age";
+import ResumeLink from "../ResumeLink";
+import Flex from "../Style/Flex";
 import styled from "styled-components";
 
 const profilePicUrl = "https://avatars.githubusercontent.com/u/76123583?v=4";
@@ -28,8 +27,12 @@ const StyledFlex = styled(Flex)`
   }
 
   p > span {
-    color: var(--light);
+    color: var(--accent-light);
     font-weight: bold;
+  }
+
+  h3 {
+    text-align: center;
   }
 `;
 
@@ -54,8 +57,6 @@ export default function About() {
       </p>
       <h3>Para mais informações sobre a minha formação profissional:</h3>
       <ResumeLink />
-
-      <Tech />
     </StyledFlex>
   );
 }

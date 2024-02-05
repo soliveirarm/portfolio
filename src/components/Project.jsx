@@ -1,14 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Flex from "./Style/Flex";
 import styled from "styled-components";
-import Flex from "../Flex";
-import Highlight from "../Highlight";
 
 const StyledFlex = styled(Flex)`
   cursor: pointer;
   border-radius: 10px;
   padding: 1rem;
-  transition: 0.3s;
   justify-content: space-between;
 
   &:hover {
@@ -52,8 +50,8 @@ export default function Project({ cover, title, desc, pageLink, techs }) {
       $column={true}
       $gap="10px"
       $centerY={true}
-      className="project"
-      onClick={() => window.location.assign(pageLink)}
+      className="transition"
+      onClick={() => window.open(pageLink, "_blank")}
     >
       <img src={cover} />
 
@@ -63,7 +61,7 @@ export default function Project({ cover, title, desc, pageLink, techs }) {
         <p className="desc">{desc}</p>
         <Techs $gap="0.5rem">
           {techs.map((tech) => (
-            <span>{tech}</span>
+            <span key={tech}>{tech}</span>
           ))}
         </Techs>
       </Flex>

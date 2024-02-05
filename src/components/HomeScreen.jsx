@@ -40,7 +40,7 @@ const Section = styled.section`
   }
 `;
 
-export default function BasicInfo() {
+export default function HomeScreen() {
   return (
     <Section className="section">
       <h2 className="accent title">Sarah Oliveira</h2>
