@@ -6,6 +6,7 @@ const Nav = styled.nav`
   padding: 2rem;
 
   .link {
+    cursor: pointer;
     transition: ease-in-out 0.3s;
     position: relative;
     text-decoration: none;
@@ -33,10 +34,15 @@ const Nav = styled.nav`
   }
 `;
 
+const scrollTop = () => window.scrollTo(0, 0);
+
 export default function NavLinks() {
   return (
     <Nav>
       <Flex as="ul">
+        <Link onClick={scrollTop} className="link">
+          Início
+        </Link>
         <Link href="#sobre" className="link">
           Sobre Mim
         </Link>
