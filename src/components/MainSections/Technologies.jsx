@@ -3,6 +3,7 @@ import Flex from "../Style/Flex";
 import styled from "styled-components";
 import tailwind from "/icons/tailwindcss.svg";
 import mySql from "/icons/mysql.svg";
+import figma from "/icons/figma.svg";
 import styledComponents from "/icons/styled-components.svg";
 import {
   faCss3,
@@ -14,20 +15,22 @@ import {
 
 const Section = styled(Flex)`
   .icons {
-    width: 100%;
+    width: 80%;
     display: grid;
     justify-items: center;
     align-items: center;
     gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
   }
 
   img {
     width: 40px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
     .icons {
+      width: 100%;
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -43,7 +46,7 @@ export default function Technologies() {
       className="section"
       id="tecnologias"
     >
-      <h2 className="section__title title">Principais Tecnologias</h2>
+      <h2 className="section__title title">Tecnologias</h2>
 
       <ul className="icons">
         <TechIcon name="HTML" icon={faHtml5} />
@@ -54,6 +57,7 @@ export default function Technologies() {
         <TechIcon name="MySQL" type="svg" icon={mySql} />
         <TechIcon name="React" icon={faReact} />
         <TechIcon name="styled-components" type="svg" icon={styledComponents} />
+        <TechIcon name="Figma" type="svg" icon={figma} />
       </ul>
     </Section>
   );

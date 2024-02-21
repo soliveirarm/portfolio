@@ -3,7 +3,7 @@ $accent-translucid: rgba(205, 167, 255, 0.2);
 $accent-light: #eadaff;
 $light: #f7f7f7;
 $mute: #c6c6c6;
-$dark: #1d1b22;
+$dark: #11111b;
 $font: "Inter", sans-serif;
 
 :root {
@@ -64,14 +64,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: $font;
-  background-image: linear-gradient(
-    to right top,
-    #25222a,
-    #232028,
-    #211e26,
-    #1f1d24,
-    #1d1b22
-  );
+  background-color: $dark;
   color: $light;
   background-attachment: fixed;
 }
