@@ -11,6 +11,10 @@ const StyledFlex = styled(Flex)`
 
   &:hover {
     background-color: var(--accent-translucid);
+
+    .link-icon {
+      color: var(--accent);
+    }
   }
 
   img {
@@ -20,7 +24,7 @@ const StyledFlex = styled(Flex)`
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .desc {
@@ -66,7 +70,7 @@ export default function Project({ cover, title, desc, pageLink, techs }) {
         </Techs>
       </Flex>
 
-      <span className="link-icon">
+      <span className="link-icon transition">
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="sm" />
       </span>
     </StyledFlex>

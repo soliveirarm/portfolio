@@ -46,8 +46,9 @@ export default function HomeScreen() {
       <h2 className="accent title">Sarah Oliveira</h2>
       <h3>Desenvolvedora front-end</h3>
       <p>
-        Design, UI e UX são as coisas que mais me atraem, por isso me identifico
-        com front-end
+        Apaixonada por UI, UX e design. Meu objetivo é me tornar uma
+        desenvolvedora front-end experiente criar interfaces inovadoras e
+        intuitivas
       </p>
 
       <Socials />
