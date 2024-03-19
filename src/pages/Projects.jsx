@@ -1,13 +1,14 @@
-import PROJECTS from "../../data/projects.json";
-import Project from "../Project";
-import Flex from "../Style/Flex";
+import PROJECTS from "../data/projects.json";
+import Project from "../components/Project";
+import Flex from "../components/Style/Flex";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Grid = styled.div`
   display: grid;
   gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  margin-bottom: 80px;
 
   @media screen and (max-width: 1024px) {
     & {
@@ -29,9 +30,13 @@ export default function Projects() {
       $centerY={true}
       $column={true}
       id="projetos"
-      className="section"
+      className="section fade-in"
     >
-      <h2 className="section__title title">Projetos</h2>
+      <h2 className="section__title">Projetos</h2>
+
+      <Link className="link-btn" to="/projetos/academicos">
+        Projetos Acadêmicos
+      </Link>
 
       <Grid>
         {PROJECTS.personal.map((el) => (

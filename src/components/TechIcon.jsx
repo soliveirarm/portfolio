@@ -7,7 +7,8 @@ const Li = styled(Flex)`
   height: 100%;
   border-radius: 10px;
   background-color: var(--accent-translucid);
-  padding: 2.5rem 0.5rem;
+  width: 190px;
+  height: 180px;
   user-select: none;
   font-weight: 300;
   color: var(--accent-light);

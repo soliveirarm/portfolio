@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import Socials from "./Socials";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Socials from "../components/Socials";
 
 const Section = styled.section`
   position: relative;
-  height: 90vh;
+  height: 95vh;
   display: grid;
   place-content: center;
   place-items: center;
@@ -33,17 +31,12 @@ const Section = styled.section`
     text-align: center;
     padding: 3px;
   }
-
-  .scroll {
-    position: absolute;
-    bottom: 1rem;
-  }
 `;
 
 export default function HomeScreen() {
   return (
-    <Section className="section">
-      <h2 className="accent title">Sarah Oliveira</h2>
+    <Section className="section fade-in">
+      <h2 className="accent">Sarah Oliveira</h2>
       <h3>Desenvolvedora front-end</h3>
       <p>
         Apaixonada por UI, UX e design. Meu objetivo é me tornar uma
@@ -52,10 +45,6 @@ export default function HomeScreen() {
       </p>
 
       <Socials />
-
-      <a className="scroll" href="#sobre">
-        <FontAwesomeIcon icon={faChevronDown} size="xl" />
-      </a>
     </Section>
   );
 }

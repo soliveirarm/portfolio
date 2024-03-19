@@ -1,5 +1,5 @@
-import TechIcon from "../TechIcon";
-import Flex from "../Style/Flex";
+import TechIcon from "../components/TechIcon";
+import Flex from "../components/Style/Flex";
 import styled from "styled-components";
 import tailwind from "/icons/tailwindcss.svg";
 import mySql from "/icons/mysql.svg";
@@ -15,7 +15,6 @@ import {
 
 const Section = styled(Flex)`
   .icons {
-    width: 80%;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -34,6 +33,12 @@ const Section = styled(Flex)`
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .icons {
+      grid-template-columns: 1fr;
+    }
+  }
 `;
 
 export default function Technologies() {
@@ -43,10 +48,10 @@ export default function Technologies() {
       $centerY={true}
       $column={true}
       $gap="5px"
-      className="section"
+      className="section fade-in"
       id="tecnologias"
     >
-      <h2 className="section__title title">Tecnologias</h2>
+      <h2 className="section__title">Tecnologias</h2>
 
       <ul className="icons">
         <TechIcon name="HTML" icon={faHtml5} />
