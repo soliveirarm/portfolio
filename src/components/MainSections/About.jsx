@@ -2,16 +2,15 @@ import myAge from "../../js/age";
 import ResumeLink from "../ResumeLink";
 import Flex from "../Style/Flex";
 import styled from "styled-components";
+import Tech from "../TechIcon";
 
 const profilePicUrl = "https://avatars.githubusercontent.com/u/76123583?v=4";
 
-const StyledFlex = styled(Flex)`
-  margin-top: 2rem;
+const Container = styled(Flex)`
   color: var(--light);
   border-radius: 30px 10px;
 
   .about__pic {
-    align-self: center;
     width: 200px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -20,7 +19,6 @@ const StyledFlex = styled(Flex)`
   .about__content {
     text-align: center;
     color: var(--mute);
-    margin-bottom: 10px;
     font-weight: 400;
     line-height: 1.5;
     max-width: 768px;
@@ -32,20 +30,21 @@ const StyledFlex = styled(Flex)`
   }
 
   h3 {
+    margin-top: 1rem;
     text-align: center;
   }
 `;
 
 export default function About() {
   return (
-    <StyledFlex
+    <Container
       as="section"
       $centerY={true}
       $column={true}
       className="section"
       id="sobre"
     >
-      <h2 className="section__title title">Sobre Mim</h2>
+      <h2 className="section__title">Sobre Mim</h2>
       <img src={profilePicUrl} className="about__pic" />
 
       <p className="about__content">
@@ -55,8 +54,23 @@ export default function About() {
         muito da parte visual e gostaria de trabalhar com
         <span> front-end</span> e<span> design UX/UI</span>.
       </p>
-      <h3>Para mais informações sobre a minha formação profissional:</h3>
+
+      <h3 className="section__title">Tecnologias:</h3>
+      <Flex as="ul" $gap="0.5rem" $wrap={true} $centerX={true}>
+        <Tech name="HTML" />
+        <Tech name="CSS" />
+        <Tech name="Sass" />
+        <Tech name="JavaScript" />
+        <Tech name="Tailwind" />
+        <Tech name="Figma" />
+        <Tech name="React" />
+        <Tech name="styled-components" />
+      </Flex>
+
+      <h3 className="section__title">
+        Para mais informações sobre a minha formação profissional:
+      </h3>
       <ResumeLink />
-    </StyledFlex>
+    </Container>
   );
 }

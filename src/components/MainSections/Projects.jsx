@@ -31,11 +31,11 @@ export default function Projects() {
       id="projetos"
       className="section"
     >
-      <h2 className="section__title title">Projetos</h2>
+      <h2 className="section__title">Projetos</h2>
 
       <Grid>
-        {PROJECTS.personal.map((el) => (
-          <Project key={el.title} {...el} />
+        {PROJECTS.personal.map((project) => (
+          <Project key={project.title} {...project} />
         ))}
       </Grid>
     </Flex>

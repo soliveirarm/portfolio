@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Socials from "./Socials";
+import Socials from "../Socials";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -42,8 +42,8 @@ const Section = styled.section`
 
 export default function HomeScreen() {
   return (
-    <Section className="section">
-      <h2 className="accent title">Sarah Oliveira</h2>
+    <Section className="section" id="inicio">
+      <h2 className="accent">Sarah Oliveira</h2>
       <h3>Desenvolvedora front-end</h3>
       <p>
         Apaixonada por UI, UX e design. Meu objetivo é me tornar uma

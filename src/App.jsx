@@ -1,4 +1,4 @@
-import HomeScreen from "./components/HomeScreen";
+import HomeScreen from "./components/MainSections/HomeScreen";
 import NavLinks from "./components/NavLinks";
 import About from "./components/MainSections/About";
 import Projects from "./components/MainSections/Projects";
@@ -6,7 +6,6 @@ import Flex from "./components/Style/Flex";
 import Socials from "./components/Socials";
 import logo from "/logo.svg";
 import styled from "styled-components";
-import Technologies from "./components/MainSections/Technologies";
 
 const Header = styled(Flex)`
   justify-content: space-between;
@@ -14,9 +13,9 @@ const Header = styled(Flex)`
   top: 0.5rem;
   background-color: var(--dark);
   border-radius: 10px;
-  height: 70px;
-  padding: 0 0.5rem 0 0.5rem;
-  border: 2px solid var(--accent);
+  height: 60px;
+  padding: 0 0.5rem;
+  border: 1px solid var(--accent);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   z-index: 100;
 
@@ -32,7 +31,7 @@ const Header = styled(Flex)`
 `;
 
 const Logo = styled.img`
-  width: 60px;
+  width: 45px;
 `;
 
 const Main = styled.main`
@@ -43,7 +42,7 @@ const Main = styled.main`
 const Footer = styled(Flex)`
   justify-content: space-between;
   margin-top: 2rem;
-  border-top: 2px solid var(--accent);
+  border-top: 1px solid var(--accent);
   padding: 3rem 2rem 2rem;
   text-align: center;
 
@@ -65,7 +64,6 @@ export default function App() {
 
       <Main>
         <About />
-        <Technologies />
         <Projects />
       </Main>
 

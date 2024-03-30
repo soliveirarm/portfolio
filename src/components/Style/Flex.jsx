@@ -6,6 +6,7 @@ const Flex = styled.div`
   ${({ $column }) => $column && "flex-direction: column;"}
   ${({ $centerY }) => $centerY && "align-items: center;"}
   ${({ $centerX }) => $centerX && "justify-content: center;"}
+  ${({ $wrap }) => $wrap && "flex-wrap: wrap;"}
 
   .title {
     padding-top: 6rem;

@@ -37,10 +37,9 @@ const StyledFlex = styled(Flex)`
 `;
 
 const Techs = styled(Flex)`
-  color: var(--accent-light);
-  font-weight: 500;
-
   span {
+    font-weight: 500;
+    color: var(--accent-light);
     background-color: rgba(205, 167, 255, 0.1);
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
