@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Flex from "./Style/Flex";
+import Techs from "./Techs";
 import styled from "styled-components";
 
 const StyledFlex = styled(Flex)`
@@ -36,16 +37,6 @@ const StyledFlex = styled(Flex)`
   }
 `;
 
-const Techs = styled(Flex)`
-  span {
-    font-weight: 500;
-    color: var(--accent-light);
-    background-color: rgba(205, 167, 255, 0.1);
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-  }
-`;
-
 export default function Project({ cover, title, desc, pageLink, techs }) {
   return (
     <StyledFlex
@@ -62,11 +53,7 @@ export default function Project({ cover, title, desc, pageLink, techs }) {
 
       <Flex $column={true} $gap="10px" className="content">
         <p className="desc">{desc}</p>
-        <Techs $gap="0.5rem">
-          {techs.map((tech) => (
-            <span key={tech}>{tech}</span>
-          ))}
-        </Techs>
+        <Techs array={techs} />
       </Flex>
 
       <span className="link-icon transition">

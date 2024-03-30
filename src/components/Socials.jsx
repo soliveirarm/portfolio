@@ -12,11 +12,12 @@ import styled from "styled-components";
 
 const Ul = styled(Flex)`
   font-size: 22px;
+  padding: 1rem;
 `;
 
 export default function Socials() {
   return (
-    <Ul as="ul" className="section socials">
+    <Ul as="ul" className="socials">
       <Link href="https://github.com/soliveirarm" target="_blank">
         <FontAwesomeIcon icon={faGithub} />
       </Link>
