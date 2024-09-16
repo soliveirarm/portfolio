@@ -36,7 +36,7 @@
       "techs": ["HTML", "CSS", "JavaScript", "React"]
     },
     {
-      "cover": "https://github.com/soliveirarm/CurrencyConverter/blob/main/img/final-product.png?raw=true",
+      "cover": "https://github.com/soliveirarm/currency-converter/blob/main/github/desktop.png?raw=true",
       "title": "Conversor de Moedas",
       "desc": "Converte de Real para Dólar Americano, Euro e Libras Esterlinas. A cotação vem da Exchange Rates API",
       "pageLink": "https://currency-converter-so.vercel.app/",

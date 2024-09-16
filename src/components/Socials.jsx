@@ -1,23 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCodepen,
   faLinkedin,
   faGithub,
   faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import Flex from "./Style/Flex";
-import Link from "./Link";
-import styled from "styled-components";
+} from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
-const Ul = styled(Flex)`
-  font-size: 22px;
-  padding: 1rem;
-`;
+import Link from "./Link"
 
-export default function Socials() {
+function Socials() {
   return (
-    <Ul as="ul" className="socials">
+    <ul className="flex gap-5 p-4 text-2xl transition">
       <Link href="https://github.com/soliveirarm" target="_blank">
         <FontAwesomeIcon icon={faGithub} />
       </Link>
@@ -33,6 +27,8 @@ export default function Socials() {
       <Link href="https://wa.link/tqa75s" target="_blank">
         <FontAwesomeIcon icon={faWhatsapp} />
       </Link>
-    </Ul>
-  );
+    </ul>
+  )
 }
+
+export default Socials

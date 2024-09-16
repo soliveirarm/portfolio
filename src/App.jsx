@@ -1,76 +1,21 @@
-import HomeScreen from "./components/MainSections/HomeScreen";
-import NavLinks from "./components/NavLinks";
-import About from "./components/MainSections/About";
-import Projects from "./components/MainSections/Projects";
-import Flex from "./components/Style/Flex";
-import Socials from "./components/Socials";
-import logo from "/logo.svg";
-import styled from "styled-components";
+import HomeScreen from "./components/main-sections/HomeScreen"
+import About from "./components/main-sections/About"
+import Projects from "./components/main-sections/Projects"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
-const Header = styled(Flex)`
-  justify-content: space-between;
-  position: sticky;
-  top: 0.5rem;
-  background-color: var(--dark);
-  border-radius: 10px;
-  height: 60px;
-  padding: 0 0.5rem;
-  border: 1px solid var(--accent);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  z-index: 100;
-
-  @media screen and (max-width: 640px) {
-    & {
-      justify-content: center;
-    }
-
-    img {
-      display: none;
-    }
-  }
-`;
-
-const Logo = styled.img`
-  width: 45px;
-`;
-
-const Main = styled.main`
-  margin: 0 auto;
-  max-width: 1024px;
-`;
-
-const Footer = styled(Flex)`
-  justify-content: space-between;
-  margin-top: 2rem;
-  border-top: 1px solid var(--accent);
-  padding: 3rem 2rem 2rem;
-  text-align: center;
-
-  p {
-    color: var(--accent-light);
-    font-weight: bold;
-  }
-`;
-
-export default function App() {
+function App() {
   return (
     <>
-      <Header as="header" $centerY={true}>
-        <Logo src={logo} alt="Logo do site escrito 'SO' na cor roxa" />
-        <NavLinks />
-      </Header>
-
+      <Header />
       <HomeScreen />
-
-      <Main>
+      <main>
         <About />
         <Projects />
-      </Main>
-
-      <Footer as="footer" $column={true} $centerY={true} $gap="0.1rem">
-        <p>Feito com React, Sass e styled-components</p>
-        <Socials />
-      </Footer>
+      </main>
+      <Footer />
     </>
-  );
+  )
 }
+
+export default App

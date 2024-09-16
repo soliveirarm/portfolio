@@ -1,29 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons"
 
-const Link = styled.a`
-  text-decoration: none;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  font-size: 1.1rem;
-  border: 2px solid var(--accent);
-  padding: 1rem;
-  border-radius: 10px;
-
-  &:hover {
-    background-color: var(--accent);
-    color: var(--dark);
-    transform: scale(1.1);
-  }
-`;
-
-export default function ResumeLink() {
+function ResumeLink() {
   return (
-    <Link href="curriculo.pdf" target="_blank" className="bold accent">
+    <a
+      href="curriculo.pdf"
+      target="_blank"
+      className="font-bold transition text-accent flex items-center gap-2.5 border-2 border-accent p-4 rounded-lg hover:bg-accent hover:text-white hover:scale-110"
+    >
       <FontAwesomeIcon icon={faFilePdf} size="lg" />
       <span>Meu Currículo</span>
-    </Link>
-  );
+    </a>
+  )
 }
+
+export default ResumeLink

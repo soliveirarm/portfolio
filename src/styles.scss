@@ -1,19 +1,10 @@
-$accent: #cda7ff;
-$accent-translucid: rgba(205, 167, 255, 0.12);
-$accent-light: #eadaff;
+$accent: #6f6dfc;
+$accent-darker: #424196;
+$accent-translucid: rgba(66, 65, 150, 0.4);
 $light: #f7f7f7;
-$mute: #c6c6c6;
+$mute: #e0e0e0;
 $dark: #11111b;
-$font: "Inter", sans-serif;
-
-:root {
-  --accent: #{$accent};
-  --accent-translucid: #{$accent-translucid};
-  --accent-light: #{$accent-light};
-  --light: #{$light};
-  --mute: #{$mute};
-  --dark: #{$dark};
-}
+$font: "Manrope", sans-serif;
 
 // Basic reset
 
@@ -21,25 +12,13 @@ $font: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font;
 }
 
 // Reusable classes
 
 .accent {
   color: $accent;
-}
-
-.fade-in {
-  animation: fade-in 1s;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
 }
 
 .active {
@@ -49,102 +28,91 @@ $font: "Inter", sans-serif;
   border-radius: 10px;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.transition {
-  transition: ease-in-out 0.3s;
-}
-
-.section {
-  padding: 2rem;
-
-  &__title {
-    letter-spacing: 0.2px;
-  }
-
-  h2.section__title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 2rem 0;
-  }
-
-  h3.section__title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 1rem 0;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  font-family: $font;
-  background-image: linear-gradient(
-    to right top,
-    #1e1e2e,
-    #1b1b29,
-    #171824,
-    #141520,
-    #11111b
-  );
-  color: $light;
-  background-attachment: fixed;
-  animation: bg 5s infinite alternate;
-  background-size: 400%;
-}
-
-@keyframes bg {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
+  @apply w-full h-screen bg-gradient-to-tr from-accent-darker to-accent text-white bg-fixed;
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 0.5rem;
 }
 
 a {
-  @extend .transition;
   text-decoration: none;
-  color: #e0e0e0;
+  color: #fff;
 
   &:hover {
-    color: $accent;
+    color: $mute;
   }
 
   &.link-btn {
     font-size: 1.1rem;
-    border: 2px solid var(--accent);
+    border: 2px solid $accent;
     padding: 1rem;
     border-radius: 10px;
 
     &:hover {
-      background-color: var(--accent);
-      color: var(--dark);
+      background-color: $accent;
+      color: $dark;
       transform: scale(1.1);
     }
   }
 }
 
-ul {
-  list-style-type: none;
+.navbar {
+  .link {
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .link::after {
+    transition: ease-in-out 0.3s;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: $accent;
+  }
+
+  .link:hover::after {
+    width: 100%;
+  }
+
+  .link.selected {
+    color: $accent;
+    font-weight: bold;
+
+    &::after {
+      transition: ease-in-out 0.3s;
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $accent;
+    }
+  }
 }
 
 // Scrollbar
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -162,16 +130,5 @@ ul {
 
 ::selection {
   background: $accent;
-  color: $dark;
-}
-
-@media screen and (max-width: 1024px) {
-  #root {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main";
-  }
-
-  .section {
-    padding: 1rem;
-  }
+  color: #fff;
 }
