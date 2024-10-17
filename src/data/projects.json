@@ -1,103 +1,58 @@
-{
-  "personal": [
-    {
-      "cover": "dc-movies.png",
-      "title": "DC Movies",
-      "desc": "Projeto que lista todas as animações da DC em ordem de lançamento com filtros. Os dados estão vindo de um arquivo json",
-      "pageLink": "https://dc-movies.vercel.app/",
-      "techs": ["React", "Sass"]
-    },
-    {
-      "cover": "focus.png",
-      "title": "Focus",
-      "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente.",
-      "pageLink": "https://focus-minimal.vercel.app/",
-      "techs": ["HTML", "CSS", "JavaScript", "Sass"]
-    },
-    {
-      "cover": "https://github.com/soliveirarm/TemperatureConverter/blob/main/img/app-pic.png?raw=true",
-      "title": "Conversor de Temperatura",
-      "desc": "Conversor de temperatura simples feito com JavaScript (Celsius, Fahrenheit e Kelvin)",
-      "pageLink": "https://temperature-converter-so.vercel.app/",
-      "techs": ["HTML", "Sass", "JavaScript"]
-    },
-    {
-      "cover": "https://github.com/soliveirarm/SpotifyCloneReact/blob/main/img/final-product.png?raw=true",
-      "title": "Clone Spotify",
-      "desc": "Clone da página inicial do Spotify. Projeto desenvolvido durante a Imersão Dev da Alura",
-      "pageLink": "https://spotify-clone-so.vercel.app/",
-      "techs": ["HTML", "Sass", "React"]
-    },
-    {
-      "cover": "https://github.com/soliveirarm/tic-tac-toe/blob/main/public/tic-tac-toe.png?raw=true",
-      "title": "Tic-Tac-Toe",
-      "desc": "Jogo da velha feito durante o curso de React - The Complete Guide by Maximilian Schwarzmüller",
-      "pageLink": "https://tictactoe-so.vercel.app/",
-      "techs": ["HTML", "CSS", "JavaScript", "React"]
-    },
-    {
-      "cover": "https://github.com/soliveirarm/currency-converter/blob/main/github/desktop.png?raw=true",
-      "title": "Conversor de Moedas",
-      "desc": "Converte de Real para Dólar Americano, Euro e Libras Esterlinas. A cotação vem da Exchange Rates API",
-      "pageLink": "https://currency-converter-so.vercel.app/",
-      "techs": ["HTML", "Sass", "JavaScript"]
-    }
-  ],
-
-  "academic": [
-    {
-      "id": "1",
-      "cover": "https://github.com/soliveirarm/IoB/blob/main/img/website-pic.png?raw=true",
-      "title": "IoB",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci porta non pulvinar neque. Sapien nec sagittis aliquam malesuada.",
-      "pageLink": "https://iob-so.vercel.app/",
-      "techs": ["HTML", "CSS"]
-    },
-    {
-      "id": "2",
-      "cover": "https://github.com/soliveirarm/michelangelo-pizzaria/blob/main/src/img/website-pic.png?raw=true",
-      "title": "Michelangelo Pizzaria",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci porta non pulvinar neque. Sapien nec sagittis aliquam malesuada.",
-      "pageLink": "https://michelangelopizzaria.vercel.app/",
-      "techs": ["HTML", "CSS"]
-    },
-    {
-      "id": "3",
-      "cover": "https://github.com/soliveirarm/sci-calc/blob/main/img/website-picture.png?raw=true",
-      "title": "SciCalc",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci porta non pulvinar neque. Sapien nec sagittis aliquam malesuada.",
-      "pageLink": "https://scicalc-so.vercel.app/",
-      "techs": ["HTML", "CSS", "Sass", "JavaScript"]
-    },
-    {
-      "id": "4",
-      "cover": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "CRUD-Projeto",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci porta non pulvinar neque. Sapien nec sagittis aliquam malesuada.",
-      "pageLink": "https://example.com/",
-      "techs": ["HTML", "CSS", "Sass", "JavaScript", "PHP"]
-    },
-    {
-      "id": "5",
-      "cover": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Lista de Tarefas",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci porta non pulvinar neque. Sapien nec sagittis aliquam malesuada.",
-      "pageLink": "https://example.com/",
-      "techs": ["React", "Ionic"]
-    },
-    {
-      "id": "6",
-      "cover": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Indefinido",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci porta non pulvinar neque. Sapien nec sagittis aliquam malesuada.",
-      "pageLink": "https://example.com/",
-      "techs": ["HTML", "CSS"]
-    }
-  ]
-}
+[
+  {
+    "cover": "projects/dc-movies.png",
+    "title": "DC Movies",
+    "desc": "Projeto que lista todas as animações da DC em ordem de lançamento com filtros. Os dados estão vindo de um arquivo json",
+    "pageLink": "https://dc-movies.vercel.app/",
+    "techs": ["React", "Sass"]
+  },
+  {
+    "cover": "projects/focus.png",
+    "title": "Focus",
+    "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente.",
+    "pageLink": "https://focus-minimal.vercel.app/",
+    "techs": ["HTML", "CSS", "JavaScript", "Sass"]
+  },
+  {
+    "cover": "https://github.com/soliveirarm/TemperatureConverter/blob/main/img/app-pic.png?raw=true",
+    "title": "Conversor de Temperatura",
+    "desc": "Conversor de temperatura simples feito com JavaScript (Celsius, Fahrenheit e Kelvin)",
+    "pageLink": "https://temperature-converter-so.vercel.app/",
+    "techs": ["HTML", "Sass", "JavaScript"]
+  },
+  {
+    "cover": "https://github.com/soliveirarm/SpotifyCloneReact/blob/main/img/final-product.png?raw=true",
+    "title": "Clone Spotify",
+    "desc": "Clone da página inicial do Spotify. Projeto desenvolvido durante a Imersão Dev da Alura",
+    "pageLink": "https://spotify-clone-so.vercel.app/",
+    "techs": ["HTML", "Sass", "React"]
+  },
+  {
+    "cover": "https://github.com/soliveirarm/tic-tac-toe/blob/main/public/tic-tac-toe.png?raw=true",
+    "title": "Tic-Tac-Toe",
+    "desc": "Jogo da velha feito durante o curso de React - The Complete Guide by Maximilian Schwarzmüller",
+    "pageLink": "https://tictactoe-so.vercel.app/",
+    "techs": ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    "cover": "https://github.com/soliveirarm/currency-converter/blob/main/github/desktop.png?raw=true",
+    "title": "Conversor de Moedas",
+    "desc": "Converte de Real para Dólar Americano, Euro e Libras Esterlinas. A cotação vem da Exchange Rates API",
+    "pageLink": "https://currency-converter-so.vercel.app/",
+    "techs": ["HTML", "Sass", "JavaScript"]
+  },
+  {
+    "cover": "https://github.com/soliveirarm/itinerario-lins/blob/main/github/social-preview.png?raw=true",
+    "title": "Itinerário Lins",
+    "desc": "Site com o objetivo de catalogar o horário de todos os ônibus da cidade de Lins, São Paulo.",
+    "pageLink": "https://busaolins.vercel.app/",
+    "techs": ["React", "Tailwind"]
+  },
+  {
+    "cover": "projects/teachers-salary.png",
+    "title": "Teachers' Salary",
+    "desc": "App criado pra calcular o salário de professores do CNA de acordo com a hora aula",
+    "pageLink": "https://teachers-salary.vercel.app/",
+    "techs": ["React", "Tailwind"]
+  }
+]

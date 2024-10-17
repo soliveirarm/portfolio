@@ -2,7 +2,7 @@ import PROJECTS from "../../data/projects.json"
 import Project from "../Project"
 
 export default function Projects() {
-  const renderedProjects = PROJECTS.personal.map((project) => (
+  const renderedProjects = PROJECTS.map((project) => (
     <Project key={project.title} {...project} />
   ))
 

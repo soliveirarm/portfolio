@@ -9,7 +9,7 @@ export default function Header() {
     window.addEventListener("scroll", () => {
       if (scrollY >= 0 && scrollY < 700) {
         setSelected("home")
-      } else if (scrollY >= 700 && scrollY < 1700) {
+      } else if (scrollY >= 700 && scrollY < 1500) {
         setSelected("about")
       } else {
         setSelected("projects")
