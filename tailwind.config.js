@@ -11,7 +11,7 @@ export default {
         10: "0.625rem",
       },
       fontFamily: {
-        title: ["Space Mono", "monospace"],
+        title: ["Chakra Petch", "sans-serif"],
       },
     },
   },

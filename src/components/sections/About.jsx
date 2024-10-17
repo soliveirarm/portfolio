@@ -8,7 +8,7 @@ const profilePicUrl = "https://avatars.githubusercontent.com/u/76123583?v=4"
 export default function About() {
   return (
     <section className="flex flex-col gap-5 items-center p-8" id="sobre">
-      <h2 className="tracking-wide text-3xl font-title italic">Sobre Mim</h2>
+      <h2 className="tracking-wide text-3xl font-title ">Sobre Mim</h2>
 
       <img src={profilePicUrl} className="w-52 rounded-10" />
       <p className="text-center text-zinc-200 max-w-screen-md">
@@ -21,7 +21,7 @@ export default function About() {
         <span className="text-accent-light font-bold"> design UX/UI</span>.
       </p>
 
-      <h3 className="tracking-wide text-xl">Tecnologias:</h3>
+      <h3 className="tracking-wide text-2xl font-title">Tecnologias:</h3>
       <ul className="flex flex-wrap justify-center gap-2">
         <TechIcon name="HTML" />
         <TechIcon name="CSS" />

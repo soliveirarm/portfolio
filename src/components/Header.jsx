@@ -2,6 +2,7 @@ import NavLink from "./NavLink"
 import { useEffect, useState } from "react"
 
 export default function Header() {
+  const [onTop, setOnTop] = useState(true)
   const [selected, setSelected] = useState("home")
 
   useEffect(() => {
@@ -13,11 +14,18 @@ export default function Header() {
       } else {
         setSelected("projects")
       }
+
+      if (scrollY == 0) setOnTop(true)
+      else setOnTop(false)
     })
   }, [])
 
   return (
-    <header className="flex justify-center items-center p-8 fixed top-2 w-full bg-transparent z-50">
+    <header
+      className={`w-full flex justify-center items-center z-50 fixed transition ${
+        onTop ? "p-8 top-2  bg-transparent" : "top-0 p-4 bg-black"
+      }`}
+    >
       <nav>
         <ul className="flex gap-5">
           <NavLink

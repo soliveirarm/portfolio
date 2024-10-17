@@ -3,7 +3,7 @@ import Socials from "../Socials"
 export default function HomeScreen() {
   return (
     <section className="home-screen" id="inicio">
-      <h2 className="text-accent text-5xl text-center p-1 font-title italic">
+      <h2 className="text-accent text-5xl text-center p-1 font-title ">
         Sarah Oliveira
       </h2>
       <h3 className="text-2xl text-center p-1">Desenvolvedora front-end</h3>
