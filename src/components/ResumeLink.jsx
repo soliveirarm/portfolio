@@ -1,29 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
-
-const Link = styled.a`
-  text-decoration: none;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  font-size: 1.1rem;
-  border: 2px solid var(--accent);
-  padding: 1rem;
-  border-radius: 10px;
-
-  &:hover {
-    background-color: var(--accent);
-    color: var(--dark);
-    transform: scale(1.1);
-  }
-`;
+import { TbFileTypePdf } from "react-icons/tb"
 
 export default function ResumeLink() {
   return (
-    <Link href="curriculo.pdf" target="_blank" className="bold accent">
-      <FontAwesomeIcon icon={faFilePdf} size="lg" />
+    <a
+      href="curriculo.pdf"
+      target="_blank"
+      className="font-bold text-accent transition flex items-center gap-2.5 text-lg rounded-10 border-2 border-accent p-4 hover:bg-accent hover:text-black hover:scale-110"
+    >
+      <TbFileTypePdf size="24" />
       <span>Meu Currículo</span>
-    </Link>
-  );
+    </a>
+  )
 }

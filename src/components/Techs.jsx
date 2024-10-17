@@ -1,25 +1,11 @@
-import styled from "styled-components";
-import Flex from "./Style/Flex";
-
-const Container = styled(Flex)`
-  color: var(--accent-light);
-  font-weight: 500;
-
-  span {
-    background-color: rgba(205, 167, 255, 0.1);
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-  }
-`;
-
-function Techs({ array }) {
+export default function Techs({ array }) {
   return (
-    <Container $gap="0.5rem">
+    <div className="flex gap-2 text-accent-light font-medium">
       {array.map((tech) => (
-        <span key={tech}>{tech}</span>
+        <span className="bg-accent/10 py-1 px-2 rounded" key={tech}>
+          {tech}
+        </span>
       ))}
-    </Container>
-  );
+    </div>
+  )
 }
-
-export default Techs;

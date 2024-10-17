@@ -1,38 +1,26 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCodepen,
-  faLinkedin,
-  faGithub,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import Flex from "./Style/Flex";
-import Link from "./Link";
-import styled from "styled-components";
+import { LuGithub, LuCodepen, LuLinkedin, LuMail } from "react-icons/lu"
+import { FaWhatsapp } from "react-icons/fa"
 
-const Ul = styled(Flex)`
-  font-size: 22px;
-  padding: 1rem;
-`;
+import Link from "./Link"
 
 export default function Socials() {
   return (
-    <Ul as="ul" className="socials">
+    <ul className="socials flex gap-5 text-2xl p-4">
       <Link href="https://github.com/soliveirarm" target="_blank">
-        <FontAwesomeIcon icon={faGithub} />
+        <LuGithub />
       </Link>
       <Link href="https://www.linkedin.com/in/soliveirarm/" target="_blank">
-        <FontAwesomeIcon icon={faLinkedin} />
+        <LuLinkedin />
       </Link>
       <Link href="https://codepen.io/soliveirarm" target="_blank">
-        <FontAwesomeIcon icon={faCodepen} />
+        <LuCodepen />
       </Link>
-      <Link href="mailto:soliveirarm@outlook.com">
-        <FontAwesomeIcon icon={faEnvelope} />
+      <Link href="mailto:soliveirarm@gmail.com">
+        <LuMail />
       </Link>
       <Link href="https://wa.link/tqa75s" target="_blank">
-        <FontAwesomeIcon icon={faWhatsapp} />
+        <FaWhatsapp />
       </Link>
-    </Ul>
-  );
+    </ul>
+  )
 }
