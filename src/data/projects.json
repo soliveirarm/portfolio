@@ -3,56 +3,63 @@
     "cover": "projects/dc-movies.png",
     "title": "DC Movies",
     "desc": "Projeto que lista todas as animações da DC em ordem de lançamento com filtros. Os dados estão vindo de um arquivo json",
-    "pageLink": "https://dc-movies.vercel.app/",
+    "page_link": "https://dc-movies.vercel.app/",
     "techs": ["React", "Sass"]
   },
   {
     "cover": "projects/focus.png",
     "title": "Focus",
     "desc": "App simples para adicionar tarefas do dia-a-dia. A lista de tarefas fica salva localmente.",
-    "pageLink": "https://focus-minimal.vercel.app/",
+    "page_link": "https://focus-minimal.vercel.app/",
     "techs": ["HTML", "CSS", "JavaScript", "Sass"]
   },
   {
     "cover": "https://github.com/soliveirarm/TemperatureConverter/blob/main/img/app-pic.png?raw=true",
     "title": "Conversor de Temperatura",
     "desc": "Conversor de temperatura simples feito com JavaScript (Celsius, Fahrenheit e Kelvin)",
-    "pageLink": "https://temperature-converter-so.vercel.app/",
+    "page_link": "https://temperature-converter-so.vercel.app/",
     "techs": ["HTML", "Sass", "JavaScript"]
   },
   {
     "cover": "https://github.com/soliveirarm/SpotifyCloneReact/blob/main/img/final-product.png?raw=true",
     "title": "Clone Spotify",
     "desc": "Clone da página inicial do Spotify. Projeto desenvolvido durante a Imersão Dev da Alura",
-    "pageLink": "https://spotify-clone-so.vercel.app/",
+    "page_link": "https://spotify-clone-so.vercel.app/",
     "techs": ["HTML", "Sass", "React"]
   },
   {
     "cover": "https://github.com/soliveirarm/tic-tac-toe/blob/main/public/tic-tac-toe.png?raw=true",
     "title": "Tic-Tac-Toe",
     "desc": "Jogo da velha feito durante o curso de React - The Complete Guide by Maximilian Schwarzmüller",
-    "pageLink": "https://tictactoe-so.vercel.app/",
+    "page_link": "https://tictactoe-so.vercel.app/",
     "techs": ["HTML", "CSS", "JavaScript", "React"]
   },
   {
     "cover": "https://github.com/soliveirarm/currency-converter/blob/main/github/desktop.png?raw=true",
     "title": "Conversor de Moedas",
     "desc": "Converte de Real para Dólar Americano, Euro e Libras Esterlinas. A cotação vem da Exchange Rates API",
-    "pageLink": "https://currency-converter-so.vercel.app/",
+    "page_link": "https://currency-converter-so.vercel.app/",
     "techs": ["HTML", "Sass", "JavaScript"]
   },
   {
     "cover": "https://github.com/soliveirarm/itinerario-lins/blob/main/github/social-preview.png?raw=true",
     "title": "Itinerário Lins",
     "desc": "Site com o objetivo de catalogar o horário de todos os ônibus da cidade de Lins, São Paulo.",
-    "pageLink": "https://busaolins.vercel.app/",
+    "page_link": "https://busaolins.vercel.app/",
     "techs": ["React", "Tailwind"]
   },
   {
     "cover": "projects/teachers-salary.png",
     "title": "Teachers' Salary",
     "desc": "App criado pra calcular o salário de professores do CNA de acordo com a hora aula",
-    "pageLink": "https://teachers-salary.vercel.app/",
+    "page_link": "https://teachers-salary.vercel.app/",
+    "techs": ["React", "Tailwind"]
+  },
+  {
+    "cover": "projects/tomayto-tomahto.png",
+    "title": "Tomayto Tomahto",
+    "desc": "App simples de pomodoro para você ter mais produtividade realizando suas tarefas",
+    "page_link": "https://tomayto-tomahto.vercel.app/",
     "techs": ["React", "Tailwind"]
   }
 ]

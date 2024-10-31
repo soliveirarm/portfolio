@@ -2,11 +2,13 @@ import { LuExternalLink } from "react-icons/lu"
 
 import Techs from "./Techs"
 
-export default function Project({ cover, title, desc, pageLink, techs }) {
+export default function Project({ cover, title, desc, page_link, techs }) {
+  const openProject = (l) => window.open(l, "_blank")
+
   return (
     <section
       className="group flex flex-col justify-between items-center gap-2.5 rounded-10 p-4 cursor-pointer hover:bg-accent/15 transition hover:ring-2 ring-accent/80"
-      onClick={() => window.open(pageLink, "_blank")}
+      onClick={() => openProject(page_link)}
     >
       <img className="w-full object-contain rounded-10" src={cover} />
 
